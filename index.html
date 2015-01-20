@@ -28,11 +28,9 @@
 			editor.setTheme("ace/theme/cobalt");
 			editor.getSession().setMode("ace/mode/java");
 			editor.setValue("jQuery not working...");
-			alert("0");
 			$.get("https://raw.githubusercontent.com/Phasesaber/EasyAsXYZ/gh-pages/docs/EasyAsXYZ.java", function(data, status){
-				alert(data);
+				editor.setValue(data);
 			});
-			alert("3");
 		</script>
 		
 		
