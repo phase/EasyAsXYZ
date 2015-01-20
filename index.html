@@ -1,116 +1,35 @@
-<!DOCTYPE html>
 <html>
 
-<head>
-	<title>Easy as XYZ</title>
-	<link href="theme.css" rel="stylesheet" type="text/css"><link>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"></link>
-</head>
-
-<body>
-
-	<header>
-		<h1>Easy as XYZ</h1>
-		<p>Learn code quickly & easily!</p>
-		<br></br>
-		<p>Current Languages</p>
-	</header>
+	<head>
+		<title>Easy as XYZ</title>
+		<style type="text/css" media="screen">
+			#editor{
+				position: absolute;
+				top: 100;
+				right: 250;
+				bottom: 0;
+				left: 250;
+			}
+		</style>
+	</head>
+	<body>
+<div id="editor">
+//This is a class, they are the same name as the file they come in!
+public class EasyAsXYZ{
 	
-	<ul>
+	public static void main(String... args){
+		System.out.println("Hello World!");
+	}
 	
-	<p>A</p>
-	<li><a href="Languages/A/Assembly.html">Assembly</a></li>
-	
-	<p>B</p>
-	<li><a href="Languages/B/B.html">B</a></li>
-	<li><a href="Languages/B/Brainfsck.html">Brainfsck</a></li>
-	<li><a href="Languages/B/BASIC.html">BASIC</a></li>
-	
-	<p>C</p>
-	<li><a href="Languages/C/C.html">C</a></li>
-	<li><a href="Languages/C/Cpp.html">C++</a></li>
-	<li><a href="Languages/C/Csharp.html">C#</a></li>
-	<li><a href="Languages/C/CSS.html">CSS</a></li>
-	<li><a href="Languages/C/Clojure.html">Clojure</a></li>
-	<li><a href="Languages/C/Coffescript.html">Coffescript</a></li>
-	
-	<p>D</p>
-	<li><a href="Languages/D/D.html">D</a></li>
-	<li><a href="Languages/D/Dart.html">Dart</a></li>
-	
-	<p>E</p>
-	<li><a href="Languages/E/Elisp.html">Elisp</a></li>
-	<li><a href="Languages/E/Elixir.html">Elixir</a></li>
-	<li><a href="Languages/E/Erlang.html">Erlang</a></li>
-	
-	<p>F</p>
-	<li><a href="Languages/F/Flow.html">Flow</a></li>
-	<li><a href="Languages/F/Fsharp.html">F#</a></li>
-	<li><a href="Languages/F/Fortran.html">Fortran</a></li>
-	
-	<p>G</p>
-	<li><a href="Languages/G/Go.html">Go</a></li>
-	<li><a href="Languages/G/Groovy.html">Groovy</a></li>
-	
-	<p>H</p>
-	<li><a href="Languages/H/HTML.html">HTML</a></li>
-	<li><a href="Languages/H/Haskell.html">Haskell</a></li>
-	
-	<p>I</p>
-	
-	<p>J</p>
-	<li><a href="Languages/J/Java.html">Java</a></li>
-	<li><a href="Languages/J/Javascript.html">Javascript</a></li>
-	
-	<p>K</p>
-	
-	<p>L</p>
-	<li><a href="Languages/L/Lua.html">Lua</a></li>
-	<li><a href="Languages/L/LISP.html">LISP</a></li>
-	
-	<p>M</p>
-	<li><a href="Languages/M/Markdown.html">Markdown</a></li>
-	
-	<p>N</p>
-	
-	<p>O</p>
-	<li><a href="Languages/O/Objective-C.html">Objective-C</a></li>
-	<li><a href="Languages/O/Objective-Cpp.html">Objective-C++</a></li>
-	
-	<p>P</p>
-	<li><a href="Languages/P/Python.html">Python</a></li>
-	<li><a href="Languages/P/PHP.html">PHP</a></li>	
-	<li><a href="Languages/P/Perl.html">Perl</a></li>
-	
-	<p>Q</p>
-	
-	<p>R</p>
-	<li><a href="Languages/R/R.html">R</a></li>
-	<li><a href="Languages/R/Ruby.html">Ruby</a></li>
-	
-	<p>S</p>
-	<li><a href="Languages/S/Scala.html">Scala</a></li>
-	<li><a href="Languages/S/Swift.html">Swift</a></li>
-	
-	<p>T</p>
-	
-	<p>U</p>
-	
-	<p>V</p>
-	<li><a href="Languages/V/VisualBasic.html">Visual Basic</a></li>
-	
-	<p>W</p>
-	
-	<p>X</p>
-	<li><a href="Languages/X/XML.html">XML</a></li>
-	
-	<p>Y</p>
-	<li><a href="Languages/Y/Yaml.html">Yaml</a></li>
-	
-	<p>Z</p>
-	
-	</ul>
-	
-</body>
+}</div>
+		
+		<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var editor = ace.edit("editor");
+			editor.setTheme("ace/theme/cobalt");
+			editor.getSession().setMode("ace/mode/java");
+			document.getElemtById('editor').style.fontSize = '24px';
+		</script>
+	</body>
 
 </html>

@@ -6,3 +6,7 @@ h1, p, li{
 ul p{
 	margin-left: 22.5%;
 }
+
+ul li a{
+	text-size: 15px;
+}
