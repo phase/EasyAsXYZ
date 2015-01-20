@@ -17,15 +17,21 @@
 		<header>
 			<h1>Easy as XYZ</h1>
 		</header>
-		<div id="editor"></div>
+		<div id="editor">Ace not working...</div>
 		
-		<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script>
 			var editor = ace.edit("editor");
 			editor.setTheme("ace/theme/cobalt");
 			editor.getSession().setMode("ace/mode/java");
-			editor.setValue("Test!");
+			editor.setValue("jQuery not working...");
+			$(document).read(function(){
+				$.get("docs/EasyAsXYZ.java", function(data, status){
+					editor.setValue(data);
+				});
+			});
 			
 		</script>
 	</body>
