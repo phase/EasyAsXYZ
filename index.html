@@ -16,24 +16,30 @@
 	<body>
 		<header>
 			<h1>Easy as XYZ</h1>
-		</header>
-		<div id="editor">Ace not working...</div>
+			
+			<div id="editor">Ace not working...</div>
 		
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+			<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+			<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+			<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script>
 			var editor = ace.edit("editor");
 			editor.setTheme("ace/theme/cobalt");
 			editor.getSession().setMode("ace/mode/java");
 			editor.setValue("jQuery not working...");
-			$(document).read(function(){
-				$.get("docs/EasyAsXYZ.java", function(data, status){
-					editor.setValue(data);
-				});
+			alert("0");
+			$.get("https://raw.githubusercontent.com/Phasesaber/EasyAsXYZ/gh-pages/docs/EasyAsXYZ.java", function(data, status){
+				alert(data);
 			});
-			
+			alert("3");
 		</script>
-	</body>
+		
+		
+		
+		</header>
+		
+			
+		</body>
 
 </html>
