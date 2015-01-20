@@ -2,6 +2,7 @@
 
 	<head>
 		<title>Easy as XYZ</title>
+		<link rel="stylesheet" type="text/css" href="theme.css">
 		<style type="text/css" media="screen">
 			#editor{
 				position: absolute;
@@ -13,22 +14,19 @@
 		</style>
 	</head>
 	<body>
-<div id="editor">
-//This is a class, they are the same name as the file they come in!
-public class EasyAsXYZ{
-	
-	public static void main(String... args){
-		System.out.println("Hello World!");
-	}
-	
-}</div>
+		<header>
+			<h1>Easy as XYZ</h1>
+		</header>
+		<div id="editor"></div>
 		
 		<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script>
 			var editor = ace.edit("editor");
 			editor.setTheme("ace/theme/cobalt");
 			editor.getSession().setMode("ace/mode/java");
-			document.getElemtById('editor').style.fontSize = '24px';
+			editor.setValue("Test!");
+			
 		</script>
 	</body>
 
