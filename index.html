@@ -27,10 +27,9 @@
 			editor.setTheme("ace/theme/cobalt");
 			editor.getSession().setMode("ace/mode/java");
 			editor.setValue("jQuery not working...");
-			alert(window.location.href);
-			$.get(window.location.href + "/docs/EasyAsXYZ.java", function(data){
+			$.get("http://corsproxy.com/" + "raw.githubusercontent.com/Phasesaber/EasyAsXYZ/gh-pages/docs/EasyAsXYZ.java", function(data){
 				editor.setValue(data);
-			}, "txt");
+			});
 		</script>
 		
 		
