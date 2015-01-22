@@ -8,7 +8,7 @@ function loadEditor(language, fileName){
 		editor.setValue(data);
 		editor.getSession().setMode("ace/mode/" + language);
 	});
-	var lineBreaks = (editor.getValue().match(/\n/g)||[]).length;
+	var lineBreaks = (editor.getValue().match(/\n/gm)||[]).length;
 	document.getElementById("editor").style.height = ((fontSize * (lineBreaks + 1)) + 6) + "px";
 	editor.gotoLine(1);
 	//editor.setReadOnly(true);
