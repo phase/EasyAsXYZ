@@ -28,7 +28,8 @@
 			editor.getSession().setMode("ace/mode/java");
 			editor.setValue("jQuery not working...");
 			$.get("http://learn.5th.xyz/docs/EasyAsXYZ.java", function(data){
-				editor.setValue(JSON.parse(data));
+				console.log(data);
+				editor.setValue(data);
 			});
 		</script>
 		
