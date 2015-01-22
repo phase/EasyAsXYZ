@@ -8,4 +8,5 @@ function loadEditor(language, fileName){
 	});
 	editor.gotoLine(1);
 	editor.setReadOnly(true);
+        editor.setFontSize(24);
 }
