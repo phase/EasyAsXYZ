@@ -31,9 +31,7 @@ p{
 }
 
 #editor{
-	position: absolute;
-	top: 20%;
-	right: 20%;
-	bottom: 0;
-	left: 20%;
+	height: 400px;
+	width: 70%;
+	margin-left: 15%;
 }
