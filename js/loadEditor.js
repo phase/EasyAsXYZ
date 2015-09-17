@@ -4,7 +4,7 @@ function loadEditor(language, fileName){
 	editor.setValue("AJAX file request denied!\nMake sure you're at http://learn.5th.xyz/");
 	var fontSize = 18;
 	editor.setFontSize(fontSize);
-	$.get("http://learn.5th.xyz/docs/" + fileName , function(data){
+	$.get("http://jadonfowler.xyz/EasyAsXYZ/docs/" + fileName , function(data){
 		editor.setValue(data);
 		editor.getSession().setMode("ace/mode/" + language);
 	});
